@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Allcars from "./Cars/Allcars";
 import Car1 from "./Cars/Car1";
 import Car2 from "./Cars/Car2";
 import Car3 from "./Cars/Car3";
@@ -9,6 +10,7 @@ const Routess = () => {
   return (
     <div>
       <Routes>
+        <Route path="/" element={<Allcars />} />
         <Route path="/orange" element={<Car1 />} />
         <Route path="/yellow" element={<Car2 />} />
         <Route path="/green" element={<Car3 />} />
